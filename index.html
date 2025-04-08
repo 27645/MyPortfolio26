@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c1a266f3b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                       <li><a href="#header">Home</a></li> 
+                       <li><a href="#about">About</a></li> 
+                       <li><a href="#MyWorks">Portfolio</a></li> 
+                       <li><a href="#contact">Contact</a></li> 
+                    </li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="fade-in">
+                <p>Electronics Engineer</p>
+                <h1>Hello,I'm <span>Sai Goutham S </span><br>From Bangalore</h1>
+               </div>
+            </div>
+        </div>
+    </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <div class="fade-in">
+                <img src="sai2.jpg">
+                </div>
+            </div>
+            <div class="col2">
+                <div class="fade-in">
+                <h1 class="subtitle">About Me</h1>
+                <p>I’m an Electronics engineering student with a passion for blending innovation and technology to create impactful solutions. 
+                    With hands-on experience in IoT, embedded systems,PLC,Robotics and Automation, and VLSI, I thrive at the intersection of creativity and practicality. 
+                    I’ve organized and participated in numerous hackathons, honing my problem-solving and teamwork skills. Beyond academics, 
+                    I’m deeply inspired by Core Engineers and their roles and sustainability, continuously seeking ways to contribute to a better future.
+                     Driven by interest and loopholes and a joy for learning,I believe in the value of hard work rather than dwelling on outcomes, and in uplifting others throughout the journey. </p>
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('education')">Educations</p>
+                    </div>
+                </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            
+                            <li><span>IoT</span><br>Internet of Things Using Embedded Controllers</li>
+                            <li><span>3D Printing</span><br>Structure Design With Design Tools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                            <li><span>2024</span><br>Research Member at Q-Bits Quantum Tech club of NMIT</li>
+                            <li><span>2024</span><br>Event Co Ordinator at IEEE Education Society Chapter of NMIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Grade 10 at indian International School CBSE</li>
+                            <li><span>2022</span><br>Grade 12 at Mahesh PU college</li>
+                            <li><span>2026</span><br>BE in Electrical and Electronics From NMIT Bangalore</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------>
+<div id="MyWorks">
+    <div class="container">
+        <div class="fade-in">
+        <h1 class="subtitle">My Works</h1>
+        <div class="worklists">
+            <div>
+              
+            
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>IoT-based Industrial safety system</h2>
+                <p> : Implemented moisture sensors and motor-driven sprinklers for automated irrigation.<br>to remotely control the motors,which is useful for the farmers</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-lightbulb"></i>
+                <h2>Pulse Generator PCB</h2>
+                <p> Designed and routed PCB using KiCAD<br>And Mounted throughold Components to do realtime PCB</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Unidirectional Game (Google Dinosaur Replica)</h2>
+                <p> Developed using an LCD screen,I2C interface, and Arduino with Python Programming</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="fade-in">
+         <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>saigouthamranangi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 6363671096</p>
+                <div class="socialicons">
+                    <a href="https://www.instagram.com/simmu_7/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sai-goutham-s-1185132a7/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="Std format_SAI GOUTHAM S_EEE (1).pdf" download class="btn">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn1">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sai Goutham S made with care</p>
+    </div>
+</div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxfZsdkLWpyqyIcrw3LY-DdHqUCO5aCvDs-gX-SBtuEYflqqriP8vogL-WLXUFzFdQS2A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message Sent Succesfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    window.addEventListener("load", () => {
+    document.querySelector(".header-text").classList.add("loaded");
+});
+</script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll(".fade-in");
+
+    function checkScroll() {
+        elements.forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+                el.classList.add("visible");
+            } else {
+                el.classList.remove("visible"); // Remove class when scrolled back up
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Run once on load
+});
+
+</script>
+</body>
+</html>
